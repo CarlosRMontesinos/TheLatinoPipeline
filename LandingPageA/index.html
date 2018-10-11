@@ -3,15 +3,41 @@
 
 <head>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125970582-1"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics --
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126821281-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      gtag('config', 'UA-125970582-1');
+      gtag('require', 'GTM-WJFLD9B');
+      gtag('config', 'UA-126821281-1');
     </script>
+
+    <style>.async-hide { opacity: 0 !important} </style>
+    <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000,
+    {'GTM-WJFLD9B':true});</script>
+-->
+
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-126821281-1', 'auto');
+      ga('require', 'GTM-WJFLD9B');
+      ga('send', 'pageview');
+    </script>
+    <style>.async-hide { opacity: 0 !important} </style>
+    <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
+    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+    })(window,document.documentElement,'async-hide','dataLayer',4000,
+    {'GTM-WJFLD9B':true});</script>
+
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -84,7 +110,10 @@
                         <input type="text" name="b_b0ed2b598d8faa14ffbd88839_315796c5a8" tabindex="-1" value="">
                       </div>
                       <!-- ---------------- -->
-                      <button type="submit" class="btn btn-xl" name="subscribe" id="mc-embedded-subscribe">Sign Up</button>
+                      <!--
+                      <button type="submit" class="btn btn-xl" name="subscribe" id="mc-embedded-subscribe" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'clicked', eventLabel: 'email signup'});">Sign Up</button>
+                    -->
+                      <button type="submit" class="btn btn-xl" name="subscribe" id="mc-embedded-subscribe" onClick="ga('send', 'event', button, clicked, 'signup');">Sign Up</button>
                     </div>
                   </form>
                 </section>
@@ -117,7 +146,8 @@
     <!-- <script src="js/contact_me.js"></script> -->
     <!-- Custom Theme JavaScript -->
     <script src="./bootstrap/js/agency.js"></script>
-  
+  <!--
+    <a href =  "https://pageb-216804.appspot.com/" onClick="ga('send', 'event', { eventCategory: 'button', eventAction: 'clicked', eventLabel: 'email signup'});"> -->
 
 </body>
 
